@@ -1,6 +1,6 @@
-Voice Assistant - Transcription and Command Execution
+# Voice Assistant - Transcription and Command Execution
 
-Overview
+## Overview
 
 This Python-based voice assistant allows users to record audio, transcribe it into text using OpenAI's Whisper model, and process the text with GPT-4o to execute various commands, including opening websites, launching applications, and managing notes. The assistant supports Polish language transcription and responses.
 
@@ -46,7 +46,41 @@ Upewnij się, że masz zainstalowany Python, a następnie zainstaluj zależnośc
 pip install openai whisper gtts pyaudio sounddevice scipy pynput pyperclip python-dotenv
 ```
 
+### Virtual Environment Setup
+
+It is recommended to use a virtual environment to manage dependencies. To set up and activate it:
+
+```sh
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate  # Windows
+```
+
+Then install the dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+### Konfiguracja środowiska wirtualnego
+
+Zaleca się użycie środowiska wirtualnego do zarządzania zależnościami. Aby je utworzyć i aktywować:
+
+```sh
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate  # Windows
+```
+
+Następnie zainstaluj zależności:
+
+```sh
+pip install -r requirements.txt
+```
+
 ### API Key Setup
+
+To use the assistant, you need an OpenAI API key. You can purchase one here: [OpenAI API Key](https://openai.com/api/).
 
 Create a `.env` file in the project directory with the following content:
 
@@ -56,7 +90,9 @@ OPENAI_API_KEY=your_openai_api_key
 
 ### Konfiguracja klucza API
 
-dodaj do plik `.env` w katalogu projektu z następującą zawartością:
+Aby korzystać z asystenta, musisz posiadać klucz API OpenAI. Możesz go zakupić tutaj: [OpenAI API Key](https://openai.com/api/).
+
+Dodaj do pliku `.env` w katalogu projektu następującą zawartość:
 
 ```
 OPENAI_API_KEY=your_openai_api_key
